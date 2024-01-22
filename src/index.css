@@ -1,13 +1,104 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #222;
+}
+.add {
+  margin-top: 50px;
+}
+.img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 50px;
+}
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+.inp {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  gap: 20px;
+}
+.inp button {
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  font-size: 20px;
+  background: #222;
+}
+.inp input {
+  height: 40px;
+  border: none;
+  border-bottom: #222 solid 2px !important;
+  font-size: 15px;
+}
+.inp input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.edit {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  gap: 20px;
+}
+.edit input {
+  height: 40px;
+  border: none;
+  border-bottom: #222 solid 2px !important;
+  font-size: 15px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.edit input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.edit button {
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  font-size: 20px;
+  background: #222;
+}
+.item {
+  -webkit-box-shadow: -8px 41px 100px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: -8px 41px 100px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: -8px 41px 100px 0px rgba(34, 60, 80, 0.2);
+}
+.item h3 {
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 10px;
+}
+.item h5 {
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 10px;
+}
+.item button {
+  margin: 10px;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  font-size: 15px;
+  background: #222;
 }
